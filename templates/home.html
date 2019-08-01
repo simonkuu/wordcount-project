@@ -1,0 +1,10 @@
+<h1>WORD COUNT</h1>
+<br />
+
+<a href="{% url 'about' %}"><h2>about</h2></a>
+
+<form action="{% url 'count' %}">
+  <textarea name="fulltext" rows="5" cols="40"></textarea> <!––name fulltext ukaze parametr primo v URL v prohlizeci, hlaven je to ale myslim promena, na kterou se ulizi cokoliv napisu do toho form fieldu ci co ––>
+  <br />
+  <input type="submit" value="Count!" />
+</form>
